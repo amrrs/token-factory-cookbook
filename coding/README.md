@@ -42,7 +42,7 @@ References:
 | Cline | ✅ | ✅ | ✅ | [instructions](#cline) |
 | Claude Code | - | - | ✅ | [instructions](#claude-code) |
 | Codex | - | - | ✅ | [instructions](#codex) |
-| OpenCode | ✅ | ✅ | ✅ | [instructions](opencode.md) |
+| OpenCode | ✅ | ✅ | ✅ | [instructions](opencode.md) · [full walkthrough](opencode-nebius-token-factory.md) |
 
 
 ## Cursor
@@ -78,7 +78,9 @@ Integrates using the following proxies:
 
 ## OpenCode
 
-See the [OpenCode integration guide](opencode.md)
+See the [OpenCode integration guide](opencode.md).
+
+For a step-by-step setup walkthrough with screenshots — plus the measured token cost of a real agent run — see [How to use OpenCode with Nebius Token Factory models](opencode-nebius-token-factory.md).
 
 ## Proxies
 

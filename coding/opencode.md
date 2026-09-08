@@ -67,4 +67,5 @@ Use this proxy: [Nebius TF Relay](https://nebius-tf-relay.vercel.app/)
 
 ## Guides & Resources
 
+- [How to use OpenCode with Nebius Token Factory models](opencode-nebius-token-factory.md) — illustrated setup walkthrough, plus what one real agent run actually costs
 - A [setup guide](https://github.com/m1burn/omo-nebius-token-factory) for agentmemory + OpenCode + Token Factory
