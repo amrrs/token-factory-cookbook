@@ -77,6 +77,11 @@ change as Q2 minus Q1, then identify:
 3. Within that region, the product with the largest change in the same
    direction as the region's change.
 
+The change may be positive or negative. A negative change must be prefixed
+with a minus sign (for example, -10000) in both output files. Do not
+substitute words like "decline" or "decrease", parentheses, or any other
+notation for the sign.
+
 Verify the calculations, then create both output files. Do not delete or
 rewrite them after creation.
 

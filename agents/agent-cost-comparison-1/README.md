@@ -137,6 +137,18 @@ The built-in score compares `result.json` with the selected suite's
 It does not currently validate the summary heading, bullet count, or values;
 inspect the generated summary or transcript when verifying a run.
 
+## Sample output
+
+```text
+MODEL COMPARISON
+
+| Model                             | Success | Score | Turns | Calls | In Tok | Out Tok | Tot Tok | Time   | Cost ▲    |
+|-----------------------------------|---------|-------|-------|-------|--------|---------|---------|--------|-----------|
+| nvidia/Nemotron-3_5-Lightning     | YES     | 100%  | 8     | 11    | 30,873 | 1,214   | 32,087  | 6.67s  | $0.002144 |
+| nvidia/nemotron-3-super-120b-a12b | YES     | 100%  | 9     | 8     | 32,332 | 3,850   | 36,182  | 16.86s | $0.013165 |
+| nvidia/Nemotron-3-Ultra-550b-a55b | YES     | 100%  | 17    | 23    | 79,116 | 1,936   | 81,052  | 23.30s | $0.084924 |
+```
+
 ## Files
 
 - `agent_cost_comparison_1.py` — configuration, orchestration, and per-model
