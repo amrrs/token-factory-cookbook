@@ -18,7 +18,7 @@ Click on the model name for model guide, and ▶ to Try it @ TF in the playgroun
 | [DeepSeek V4 Pro](deepseek-v4.md)<br><br>[▶ Try it](https://tokenfactory.nebius.com/playground?models=deepseek-ai/DeepSeek-V4-Pro) | DeepSeek | 1.6T total · 49B active | 1M | Frontier open model from DeepSeek |
 | [GLM-5.2](glm-5.2.md)<br><br>[▶ Try it](https://tokenfactory.nebius.com/playground?models=zai-org/GLM-5.2) | Z.ai | 753 B | 1 M | improved reasoning, agentic capability, and tool use |
 | [Qwen3.5-397B-A17B](qwen-3.5.md)<br><br>[▶ Try it](https://tokenfactory.nebius.com/playground?models=Qwen/Qwen3.5-397B-A17B) | Alibaba / Qwen | 397B total · 17B active | 262K | Latest Qwen MoE — best-in-class reasoning and coding |
-| [Nemotron-3-Super-120B-A12B](nemotron/nemotron3-super-120B.md)<br><br>[▶ Try it](https://tokenfactory.nebius.com/playground?models=nvidia/nemotron-3-super-120b-a12b) | NVIDIA | 120B total · 12B active | 128K | Efficient MoE optimized for enterprise inference |
+| [Nemotron-3-Super-120B-A12B](nemotron/nemotron3-super-120B.md)<br><br>[▶ Try it](https://tokenfactory.nebius.com/playground?models=nvidia/nemotron-3-super-120b-a12b) | NVIDIA | 120B total · 12B active | 256K | Efficient MoE optimized for enterprise inference |
 
 ---
 
