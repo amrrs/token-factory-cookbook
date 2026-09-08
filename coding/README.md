@@ -78,7 +78,7 @@ Integrates using the following proxies:
 
 ## OpenCode
 
-See the [OpenCode integration guide](opencode.md)
+See the [OpenCode integration guide](opencode.md) — setup walkthrough with screenshots, model picker, and what one real agent run costs.
 
 ## Proxies
 
