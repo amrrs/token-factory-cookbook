@@ -79,7 +79,11 @@ with AccessRequestEnv(base_url="http://localhost:8000").sync() as env:
     ticket = result.observation.metadata["ticket"]
     result = env.step(CallToolAction(tool_name="get_employee", arguments={"employee_id": ticket["requester_id"]}))
     print(result.observation.result["data"]["status"])  # "terminated"
-    result = env.step(CallToolAction(tool_name="deny_request",
-                                     arguments={"reason_code": "employment_status", "note": "Rule 1: requester is terminated."}))
+    result = env.step(
+        CallToolAction(
+            tool_name="deny_request",
+            arguments={"reason_code": "employment_status", "note": "Rule 1: requester is terminated."},
+        )
+    )
     print(result.reward, result.done)  # 1.0 True
 ```
