@@ -167,6 +167,7 @@ Have some fun with models:
 
 - [Creating cool images using LORA adapters](lora/lora-1/README.md)
 - [Try the "Pelican Riding a Bicycle" benchmark](fun/pelican-riding-bicycle/)
+- [Real-time webcam commentary with vision models](fun/nebius-realtime-webcam/)
 
 ---
 
