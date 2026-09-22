@@ -11,10 +11,9 @@ A collection of guides and examples for building intelligent applications with o
 ## Table of Contents
 
 - [Nebius Token Factory Cookbook](#nebius-token-factory-cookbook)
-  - [Table of Contents](#table-of-contents)
+  - [👉 Start Here](#-start-here)
   - [😎 Featured](#-featured)
   - [👷 For Builders](#-for-builders)
-  - [🚀 Getting Started](#-getting-started)
   - [🎁 Models](#-models)
   - [📘 APIs](#-apis)
   - [🧪 Evaluations](#-evaluations)
@@ -31,6 +30,12 @@ A collection of guides and examples for building intelligent applications with o
   - [📜 License](#-license)
   - [🌟 GitHub Star History](#-github-star-history)
   - [✨ Contributors](#-contributors)
+
+---
+
+## 👉 Start Here
+
+New to Nebius Token Factory? Start with the [Quick tour of Token Factory](start-here/README.md), then follow the [setup guide](start-here/setup.md) to get your API key and development environment ready.
 
 ---
 
@@ -54,16 +59,6 @@ Network, learn, and build with fellow builders - including hackathons, workshops
 Join [Office Hour](office-hours/README.md) online.
 
 [Events / hackathons / workshops](community/events.md)
-
----
-
-## 🚀 [Getting Started](getting-started.md)
-
-1. **Prerequisites**
-   - A Nebius Token Factory account and API key — sign up for free [here](https://tokenfactory.nebius.com/)
-   - Python runtime (local, Google Colab, etc.)
-2. Follow the [getting started guide](getting-started.md)
-3. Follow project-specific instructions in each example's README
 
 ---
 

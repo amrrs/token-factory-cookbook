@@ -17,7 +17,7 @@ To run most of the examples in this repo, you will need a **Nebius API Key**.  H
 
 2) Click on your profile and go to API Keys section
 
-![](images/api-key-1.png)
+![](../images/api-key-1.png)
 
 3) Click on 'Get API Key'
 
@@ -25,9 +25,25 @@ To run most of the examples in this repo, you will need a **Nebius API Key**.  H
 
 5) Be sure to save the key before closing the dialog window
 
-![](images/api-key-2.png)
+![](../images/api-key-2.png)
 
-## 3 - Google Colab
+## 3 - Setup NEBIUS_API_KEY
+
+### 3A - for local runs: Setup `.env` configuration file 
+
+Use the provided `env_sample.txt` file as starter
+
+```bash
+cp   env_sample.txt   .env
+```
+
+Add your key in `.env` file as follows:
+
+```text
+NEBIUS_API_KEY=your_api_key_here
+```
+
+## 3B - Google Colab
 
 If you are using Google Colab environment no need to setup a python environment. 
 
@@ -38,9 +54,9 @@ Add NEBIUS API KEY as follows (one time setup).
 3.  Add a new secret **NEBIUS_API_KEY** and set the value
 4.  Toggle 'Notebook access' button
 
-![](images/google-colab-1.png)
+![](../images/google-colab-1.png)
 
-## 4A -  Local Python Development Environment Setup
+## 4 - Python Development Environment Setup
 
 Follow the steps below for setting up a local python environment.
 
@@ -125,20 +141,4 @@ You can also setup a custom kernel to use in IDEs like VSCode
 source .venv/bin/activate
 python -m ipykernel install --user --name="cookbook-1" --display-name "cookbook-1"
 jupyter kernelspec list
-```
-
-
-
-## 4B - Setup `.env` configuration file (for Local Setup)
-
-Use the provided `env_sample.txt` file as starter
-
-```bash
-cp   env_sample.txt   .env
-```
-
-Add your key in `.env` file as follows:
-
-```text
-NEBIUS_API_KEY=your_api_key_here
 ```

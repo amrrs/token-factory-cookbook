@@ -13,7 +13,7 @@ selected model before starting the gateway.
 ## Prerequisites
 
 - A working [OpenClaw installation](https://docs.openclaw.ai/start/getting-started)
-- A Token Factory account and API key; see [Getting Started](../../getting-started.md)
+- A Token Factory account and API key; see [Getting Started](../../start-here/setup.md)
 - A model available to your Token Factory account
 
 ## 1. Keep the API key out of configuration
@@ -148,4 +148,4 @@ regressions. It does not require an API key or network access.
 - [OpenClaw models CLI](https://docs.openclaw.ai/concepts/models)
 - [Token Factory documentation](https://docs.tokenfactory.nebius.com/)
 - [Token Factory public model catalog](https://tokenfactory.nebius.com/api/public/models_info)
-- [Cookbook Getting Started](../../getting-started.md)
+- [Cookbook Getting Started](../../start-here/setup.md)

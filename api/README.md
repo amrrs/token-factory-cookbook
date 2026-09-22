@@ -12,7 +12,7 @@ This guide shows how to run models using various python APIs.
 
 ## Setup Python Env
 
-- Be sure to finish [the setup](../getting-started.md)
+- Be sure to finish [the setup](../start-here/setup.md)
 - And install the requirements
 
 ```bash

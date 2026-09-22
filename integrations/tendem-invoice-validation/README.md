@@ -19,7 +19,7 @@ The routing rule is deliberately boring code. That makes it deterministic, audit
 ## Prerequisites
 
 - Python 3.11 or newer and [uv](https://docs.astral.sh/uv/)
-- A [Nebius Token Factory](https://tokenfactory.nebius.com/) account with access to `Qwen/Qwen2.5-VL-72B-Instruct` — see [Getting Started](../../getting-started.md) for how to create an API key
+- A [Nebius Token Factory](https://tokenfactory.nebius.com/) account with access to `Qwen/Qwen2.5-VL-72B-Instruct` — see [Getting Started](../../start-here/setup.md) for how to create an API key
 - A Tendem account, and an API key from **Account Settings → Tendem MCP → Agent Builders**
 - A funded Tendem balance. Human validation is paid work — the sample run below settled at **$3.00**.
 

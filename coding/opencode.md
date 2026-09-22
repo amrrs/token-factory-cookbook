@@ -18,7 +18,7 @@
 ## What you need
 
 - [OpenCode](https://opencode.ai/docs/) installed and on your `PATH`
-- A [Nebius Token Factory](https://tokenfactory.nebius.com/) account — see [Getting Started](../getting-started.md)
+- A [Nebius Token Factory](https://tokenfactory.nebius.com/) account — see [Getting Started](../start-here/setup.md)
 - About five minutes for setup, and roughly $0.76 if you run the [example prompt](#give-it-real-work) on GLM-5.2
 
 ### Create a Token Factory API key

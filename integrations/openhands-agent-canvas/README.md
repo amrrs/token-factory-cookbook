@@ -12,7 +12,7 @@ This guide runs the full stack on Nebius: Agent Canvas on a Nebius Cloud VM, wit
 
 ## Prerequisites
 
-- A Nebius Token Factory API key — see [Getting Started](../../getting-started.md) for how to create one.
+- A Nebius Token Factory API key — see [Getting Started](../../start-here/setup.md) for how to create one.
 - A [Nebius Cloud](https://console.nebius.com/) account with permission to create Compute VMs.
 - An SSH key pair for reaching the VM.
 
@@ -126,4 +126,4 @@ You should see the agent plan, run commands, and stream results back — every L
 
 - [OpenHands Agent Canvas docs](https://docs.openhands.dev/)
 - [Token Factory docs](https://docs.tokenfactory.nebius.com/)
-- [Cookbook: Getting Started](../../getting-started.md)
+- [Cookbook: Getting Started](../../start-here/setup.md)
