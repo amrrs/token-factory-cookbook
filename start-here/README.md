@@ -19,11 +19,13 @@
 - If you have credits, apply them. [how to video](https://www.youtube.com/watch?v=YKY6k6kSDZY)
 - Get your API key
 
-## 1 - Try the UI
+## 1 - Explore models in Playground
 https://tokenfactory.nebius.com/
 
+- Inspect model cards (pricing, context .etc)
 - Take a model for a spin.
-- Compare model outputs
+- Compare two models side by side
+- Checkout [Artificial Analysis Index](https://artificialanalysis.ai/#intelligence) page.  Compare open vs closed models.
 
 ## 2 - Your first API call
 
