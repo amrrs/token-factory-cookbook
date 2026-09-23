@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+- [0 - Sign up](#0-sign-up)
 - [1 - Try the UI](#1---try-the-ui)
 - [2 - Your first API call](#2---your-first-api-call)
 - [3 - Building Your First Agents](#3---building-your-first-agents)
@@ -11,6 +12,12 @@
 - [7 - Build a fun app / demo with your coding agent](#7---build-a-fun-app--demo-with-your-coding-agent)
 - [8 - Collect Production logs using Data Lab](#8---collect-production-logs-using-data-lab)
 - [9 - Post training your models](#9---post-training-your-models)
+
+## 0 - Sign up
+
+- Sign up at https://tokenfactory.nebius.com
+- If you have credits, apply them. [how to video](https://www.youtube.com/watch?v=YKY6k6kSDZY)
+- Get your API key
 
 ## 1 - Try the UI
 https://tokenfactory.nebius.com/
