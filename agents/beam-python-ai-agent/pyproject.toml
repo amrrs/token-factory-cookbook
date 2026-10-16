@@ -1,0 +1,14 @@
+[project]
+name = "beam-python-ai-agent"
+version = "0.1.0"
+description = "A Python AI agent that uses tool calling to let Reflection AI's Beam write and run code on Nebius Token Factory"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.99",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
