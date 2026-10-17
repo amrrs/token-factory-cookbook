@@ -1,4 +1,4 @@
-"""Run the escape room across reasoning-effort levels and seeds, then compare."""
+"""Run the analyst task across reasoning-effort levels and seeds, then compare."""
 
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ def main() -> None:
     parser.add_argument("--out", default="sweep.jsonl")
     args = parser.parse_args()
 
-    client = OpenAI(base_url=BASE_URL, api_key=os.environ["NEBIUS_API_KEY"])
+    client = OpenAI(base_url=BASE_URL, api_key=os.environ["NEBIUS_API_KEY"], timeout=120)
     prices = list_prices(client, MODEL)
     jobs = [(effort, seed) for effort in args.efforts for seed in args.seeds]
 
@@ -38,8 +38,7 @@ def main() -> None:
         except APIError as error:
             print(f"{effort:>7}  seed {seed:<3} request failed: {error}")
             return None
-        status = "escaped" if record["escaped"] else f"stuck at door {record['rooms_solved'] + 1}"
-        print(f"{effort:>7}  seed {seed:<3} {status:<17} {record['turns']:>2} turns  {record['seconds']:>6} s")
+        print(f"{effort:>7}  seed {seed:<3} {record['correct']} of 3 correct  {record['turns']:>2} turns  {record['seconds']:>6} s")
         return record
 
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
@@ -49,17 +48,16 @@ def main() -> None:
         for record in records:
             handle.write(json.dumps(record) + "\n")
 
-    print("\n| Effort | Escaped | Wrong codes | Failed scripts | Turns | Completion tokens | Reasoning tokens | Seconds | Cost |")
-    print("|---|---:|---:|---:|---:|---:|---:|---:|---:|")
+    print("\n| Effort | All 3 correct | Correct answers | Turns | Completion tokens | Reasoning tokens | Seconds | Cost |")
+    print("|---|---:|---:|---:|---:|---:|---:|---:|")
     for effort in args.efforts:
         rows = [r for r in records if r["effort"] == effort]
         if not rows:
             continue
-        escaped = sum(r["escaped"] for r in rows)
+        perfect = sum(r["correct"] == 3 for r in rows)
         cost = mean(r["cost_usd"] for r in rows) if prices else float("nan")
         print(
-            f"| {effort} | {escaped}/{len(rows)} | {mean(r['wrong_codes'] for r in rows):.1f} "
-            f"| {mean(r['script_errors'] for r in rows):.1f} "
+            f"| {effort} | {perfect}/{len(rows)} | {mean(r['correct'] for r in rows):.1f} "
             f"| {mean(r['turns'] for r in rows):.1f} | {mean(r['completion_tokens'] for r in rows):,.0f} "
             f"| {mean(r['reasoning_tokens'] for r in rows):,.0f} | {mean(r['seconds'] for r in rows):.1f} | ${cost:.4f} |"
         )
